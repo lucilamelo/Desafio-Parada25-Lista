@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de convidados</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1><span>Gestão de Lista de Convidados</span></h1>
+        <h2>Organize seus convidados de <br>
+            modo simples com nosso sitema de <br>
+            lista de convidados</h2>
+    </div>
+    <div class="lista">
+        <img src="img/lista.avif">
+        <div id="lista_1">
+            <h1>Permita um melhor gerenciamento de suas próprias listas. </h1>
+            <h3> Aqui você poderá selecionar a lista que desejar preencher, com facilidade. Podendo adicionar, remover ou alterar nomes das listas. </h3>
+        </div>      
+
+    </div>
+
+    <button onclick="show_div()">Criar evento</button>
+    
+    <div id="conteudo" >        
+        <h2>Lista de convidados</h2>
+        <span> * Para remover um nome da lista, digite-o novamente e clique em "Remover"</span><br>
+        <input type="text" id="i_lista" > <br>
+        <button id='cadastrar' onclick="cadastra_lista()" >Cadastrar</button>
+        <button id='remover' onclick="remove_lista()">Remover</button>
+        <ul id="lista"></ul>
+    </div>
+
+    
+
+</body>
+</html>
